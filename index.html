@@ -1,23 +1,123 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Basic Web Page</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" >
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-  <h1>whats up</h1>
-  <h2> this is a level 2 header</h2>
-  <h6> this is a level 6 header</h6>
-  <p> paragraph text <em>italics text </em> back to paragraph text </p>
-  <p> paragraph text <strong> bold text </strong> back to paragraph text </p>
-  <h1> <strong> strong text in a header </strong> </h1>
-  
-  <a href="https://deltarune.com/"
-  target="_blank" >delba runes
-  </a>
+<!-- declares document type -->
+<html lang="en">
+<!-- start of the HTML document, with language set to English -->
 
-  <img src="https://media.tenor.com/42LC_etFIIcAAAAj/deltarune-tenna.gif"
-  width = 500 height = 550/>
+<head>
+    <meta charset="UTF-8">
+    <!-- character encoding set to UTF-8 to support all characters -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- helps the page display on a phone/mobile device -->
+
+    <title>Finn's Website</title>
+    <!-- the title of the page in a browser tab (what shows up on the tab at the top of chrome) -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- link to my style sheet -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <!-- import font from google fonts -->
+</head>
+
+<body>
+    <!-- main content of my page -->
+
+    <header>
+        <!-- header section with my name and navigation bar -->
+        <div class="container">
+          <!-- main heading with my name, h1 for bigger header -->
+            <h1>Finn</h1>
+
+            <nav>
+                <!-- navigation menu -->
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#extracurriculars">Extracurriculars</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- about me section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello, I'm Finn! I'm currently a student studying Computer Science and hoping to eventually enter the pediatrics field, I love working on projects that combine programming logic and design.</p>
+        </div>
+    </section>
+
+    <!-- my interests section -->
+    <section id="interests" class="section">
+        <div class="container">
+            <h2>Personal Interests</h2>
+            <ul class="cards">
+                <!-- interest placed in cards -->
+                <!-- the actual card part is outlined with shadows and everything in the css -->
+                <li class="card">🎮 Gaming + Video Game Design</li>
+                <li class="card">🎞️ Cinema/TV Shows</li>
+                <li class="card">💻 Programming/3D Modeling</li>
+                <li class="card">🎨 Drawing</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- currently playing section for game image -->
+    <section id="currently playing" class ="section">
+      <div class="container">
+        <h2>Currently Playing:</h2>
+          <!-- input image of game i'm playing -->
+          <img src="https://78.media.tumblr.com/37469b33ec3650ecee9ee6553969e530/tumblr_oja50jt86t1sq41kno1_500.gif">
+        </div>
+      </section>
+          
+
+    <!-- music Section -->
+    <section id="music" class="section">
+        <div class="container">
+            <h2>Music</h2>
+            <p>I enjoy composing, playing piano and guitar, and listening to a lot of music such as nu-metal, alternative rock, geek rock, and classical. Here is a song I like: </p>
+
+            <!-- embedded spotify music player -->
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/track/0YJ9FWWHn9EfnN0lHwbzvV?utm_source=generator&theme=0"
+                width="100%" height="152" frameborder="0"
+                allowtransparency="true" allow="encrypted-media">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Extracurricular Activities -->
+    <section id="extracurriculars" class="section">
+        <div class="container">
+            <h2>Extracurriculars</h2>
+            <ul>
+                <li><strong>ACM Club</strong> – Weekly sessions and plan to assist Hackathon</li>
+                <li><strong>Personal Swim Lesson Instructor/EMT</strong> – Assist as spare EMT for EMS Providers over the summer, organize personal swim instruction for any age at Pro CLub </li>
+                <li><strong>D&D and Tabletop Games Club</strong> – Weekly sessions organizing games and helping host and participate in D&D sessions </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- contact section but i don't want to put too much real info here' -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:finngore25@gmail.com">finngore25@gmail.com</a></p>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <!-- i always see websites include this so i thought i would too, but it is a little silly because i don't mind if anyone uses this code -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025. If you're reading this, give your friend a high-five.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
+
